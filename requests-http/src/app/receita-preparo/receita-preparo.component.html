@@ -1,0 +1,83 @@
+<div id="container">
+
+    <!-- Carregamento figura de início da receita -->
+    <img class="imagem_grande" src="../../assets/images/{{ receitaSelecionada.url_fig_grande }}">
+
+    <!-- link de voltar rota, na seta e no texto -->
+    <div id="voltar">
+        <a class="alinha-figura" href="receitas"><img src="../../assets/images/icon-back.png"></a>
+        <a id="link-voltar" href="receitas">Voltar</a>
+    </div>
+
+    <!-- Título da receita e a descrição, css posiciona-os dentro da figura -->
+    <h3 id="titulo-receita">{{ receitaSelecionada.nome }}</h3>
+    <p id="descricao-receita">{{ receitaSelecionada.descricao }}</p>
+
+    <!-- caixa com informação do tempo de preparo -->
+    <table id="tempo-preparo">
+        <td id="imagem-tempo"><img class="tempo-figura" src="../../assets/images/icon-time.png"></td>
+        <td id="texto-tempo"><small>Tempo de preparo</small> <strong>{{ receitaSelecionada.tempo_preparo }} minutos</strong></td>
+    </table>
+
+    <div class="tabela-receitas">
+
+        <!--     <div class="card mt-3">
+            <div class="card-header">
+                <div class="float-left">
+                    <h4>Pedidos</h4>
+                </div>
+                    <div class="float-right">
+                        <button type="button" class="btn btn-primary" [routerLink]="['novo']">Novo Curso</button>
+                    </div> 
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Informações dos pedidos, com checkbox -->
+        <div class="card-header">
+            <table class="table table-hover">
+                <tbody>
+                    <td colspan="2" class="listagem">
+                        <h4>Pedidos</h4>
+                    </td>
+                    <!-- Tabelas criada para iterar a lista de ingredientes que será listada a partir do servidor Back-end -->
+                    <!-- Vai pegar as informações dos ingredientes -->
+                    <tr *ngFor="let ingrediente of receitaSelecionada.ingredientes">
+                        <td class="listagem">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            </div>
+                        </td>
+                        <td class="listagem">{{ ingrediente }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Informações do preparo, com checkbox -->
+        <div>
+            <table class="table table-hover">
+                <tbody>
+                    <td colspan="2" class="listagem">
+                        <h4 id="texto-modopreparo">Modo de Preparo</h4>
+                    </td>
+                    <!-- Tabelas criada para iterar a lista de intruções que será listada a partir do servidor Back-end -->
+                    <!-- Vai pegar as informações dos itens de preparos, com um contador para a sequencia de passos -->
+                    <tr *ngFor="let modo of receitaSelecionada.modo_preparo; let i = index">
+                        <td id="segundo-check" class="listagem">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            </div>
+                        </td>
+                        <td> <strong>Passo {{ i + 1 }}</strong>
+                            <table>
+                                <td id="modo-preparo">{{ modo }}</td>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>

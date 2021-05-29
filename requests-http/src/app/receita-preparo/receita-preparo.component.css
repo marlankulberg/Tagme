@@ -1,0 +1,72 @@
+#container {
+    padding-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40em;
+}
+
+.imagem_grande {
+    margin-left: auto;
+    margin-left: auto;
+    width: 40em;
+}
+
+.listagem {
+    border: none;
+}
+
+#titulo-receita {
+    padding-left: 20px;
+    transform: translateY(-180px);
+    color: white;
+}
+
+#descricao-receita {
+    padding-left: 20px;
+    transform: translateY(-180px);
+    color: white;
+}
+
+#tempo-preparo {
+    transform: translate(450px, -630px);
+    background-color: white;
+}
+
+#imagem-tempo {
+    vertical-align: middle;
+    text-align: center;
+    width: 50px;
+}
+
+#texto-tempo {
+    width: 120px;
+}
+
+.tabela-receitas {
+    transform: translateY(-220px);
+    margin-left: auto;
+    margin-right: auto;
+    width: 40em;
+}
+
+#segundo-check {
+    width: 95px;
+}
+
+#texto-modopreparo {
+    width: 250px;
+}
+
+#voltar {
+    transform: translateY(-450px);
+}
+
+.alinha-figura {
+    transform: translateY(-5px);
+    float: left;
+}
+
+#link-voltar {
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,38 @@
+<!-- carrega background e informações de configuração da tela -->
+<div id="container-bg">
+
+    <!-- div balão, que pode ser implementado posteriormente -->
+    <!--<div class="balao"></div> -->
+
+    <div class="caixa">
+
+        <figure id="logo_cocobambu">
+            <img src="../../assets/images/logo-coco-bambu.png" alt="Logotipo Coco Bambu">
+        </figure>
+
+        <!-- Campo Para inserção do login do usuario -->
+        <!-- Criado two way data binding através de ngModel, para manipular as inofrmações que vem do objeto 
+                usuario, do componente -->
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="focus-input100" id="basic-addon1"><img src="../../assets/images/icon-login.png" alt="icone_usuario"></span>
+            </div>
+            <input [(ngModel)]="usuario.nome" type="text" id="usuario" class="input100" placeholder="Usuário" aria-label="Usuário" aria-describedby="basic-addon1">
+        </div>
+
+        <!-- Campo Para inserção do senha do usuario -->
+        <!-- no input, invés do tipo senha, colocar o tipo password -->
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="focus-input100" id="basic-addon2"><img src="../../assets/images/icon-key.png" alt="icone_chave"></span>
+            </div>
+            <input [(ngModel)]="usuario.senha" type="password" id="senha" class="input100" placeholder="senha" aria-label="Senha" aria-describedby="basic-addon1">
+        </div>
+
+        <div>
+            <button type="submit" class="btn btn-warning btn-lg btn-block" name="action" (click)="fazerLogin()">Acessar</button>
+        </div>
+
+    </div>
+
+</div>

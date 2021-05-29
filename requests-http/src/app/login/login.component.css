@@ -1,0 +1,41 @@
+#container-bg {
+    margin: 0%;
+    padding: 0%;
+    /*position: relative;*/
+    height: 100vh;
+    width: 100vw;
+    /* adicionando imagem de fundo */
+    background: url('../../assets/images/img-bg-login.jpg');
+    background-size: cover;
+}
+
+.caixa {
+    padding-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em
+}
+
+
+/* Classe balão, pode ser implementada posteriormente, se houver aviso de novos pedidos */
+
+
+/*.balao {
+    background: #fff;
+    border-radius: 15px;
+    width: 400px;
+    height: 200px;
+    position: relative;
+}
+
+.balao:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #fff;
+    bottom: -20px;
+    left: 45%;
+}*/
