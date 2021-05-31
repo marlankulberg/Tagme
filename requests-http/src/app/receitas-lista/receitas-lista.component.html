@@ -4,25 +4,15 @@
     <div id="logo_pequeno">
         <h1><img src="../../assets/images/logo-coco-bambu-mini.png" alt="Logo Pequeno Coco Bambu"></h1>
     </div>
-    <!--     <section class="busca">
-        <h2>Busca</h2>
 
-        <form>
-            <input type="search">
-            <button>Buscar</button>
-        </form>
-    </section> -->
+    <!-- input de busca -->
+    <input type="text" placeholder="Buscar receita.." id="myInput" (keydown)="keyDownFunction($event)">
 
-    <div class="form-group input-group busca">
-        <input name="consulta" id="txt_consulta" placeholder="Buscar receita..." type="text" class="custom-file-input">
-        <!--      <span class="input-group-addon"><img src="../../assets/images/icon-busca.png" alt="icone_chave"></span> -->
-    </div>
-
-    <nav class="menu-opcoes">
+    <nav class="menu-opcoes ">
         <ul>
-            <li><a href="receitas">Pedidos</a></li>
-            <li><a href="receitas">Receitas</a></li>
-            <li><a href="#">Sair</a></li>
+            <li><a href="receitas ">Pedidos</a></li>
+            <li><a href="receitas ">Receitas</a></li>
+            <li><a href="# ">Sair</a></li>
         </ul>
     </nav>
 </header>
@@ -30,30 +20,30 @@
 
 <!-- construção da tabela de receitas, com a figura do prato, nome e descrição da receita, e link para 
 consutla de preparo. os Pratos disposníveis constam no banco -->
-<div class="tabela_receitas">
+<div class="tabela_receitas ">
 
-    <div class="card mt-3">
+    <div class="card mt-3 ">
 
         <!-- Título pedidos -->
-        <div class="card-header">
-            <div class="float-left">
+        <div class="card-header ">
+            <div class="float-left ">
                 <h4>Pedidos</h4>
             </div>
 
         </div>
-        <div class="card-body">
-            <table class="table table-hover">
+        <div class="card-body ">
+            <table class="table table-hover ">
                 <tbody>
                     <!-- Tabelas criada para iterar a lista de receitas que será listada a partir do servidor Back-end -->
                     <!-- Vai pegar as informações dos itens de receitas, no caso, nome e descrição -->
-                    <tr *ngFor="let receita of receitas">
-                        <td><img id="figura-prato" src="../../assets/images/{{ receita.url_fig_pequena }}"></td>
+                    <tr *ngFor="let receita of receitas ">
+                        <td><img id="figura-prato " src="../../assets/images/{{ receita.url_fig_pequena }} "></td>
                         <td><strong>{{ receita.nome }}</strong>
                             <table>
-                                <td id="descricao">{{ receita.descricao }} </td>
-                                <td id="celula-botao" rowspan="2" class="float-right">
-                                    <a href="receitas/{{ receita._id }}">
-                                        <img id="ver-receita" src="../../assets/images/ver_receita.png" alt="botão receita" />
+                                <td id="descricao ">{{ receita.descricao }} </td>
+                                <td id="celula-botao " rowspan="2 " class="float-right ">
+                                    <a href="receitas/{{ receita._id }} ">
+                                        <img id="ver-receita " src="../../assets/images/ver_receita.png " alt="botão receita " />
                                     </a>
                                 </td>
                             </table>
@@ -70,9 +60,9 @@ consutla de preparo. os Pratos disposníveis constam no banco -->
 <!-- popup para confirmação de exclusão de registro -->
 <!-- Se sim, chama onConfirmDelete, se não, chama onDeclineDelete -->
 <!--        <ng-template #deleteModal>
-            <div class="modal-body text-center">
+            <div class="modal-body text-center ">
                 <p>Tem certeza que deseja remover o curso?</p>
-                <button type="button" class="btn btn-default" (click)="onConfirmDelete()">Sim</button>
-                <button type="button" class="btn btn-primary" (click)="onDeclineDelete()">Nao</button>
+                <button type="button " class="btn btn-default " (click)="onConfirmDelete() ">Sim</button>
+                <button type="button " class="btn btn-primary " (click)="onDeclineDelete() ">Nao</button>
             </div>
         </ng-template> -->

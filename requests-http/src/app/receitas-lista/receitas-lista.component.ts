@@ -1,9 +1,8 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { ReceitasService } from '../receitas/receitas.service';
 import { Receita } from '../receitas/Receita';
 import { Router, ActivatedRoute } from '@angular/router';
-import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
-import { Observable } from 'rxjs/internal/Observable';
+import { BsModalService } from 'ngx-bootstrap/modal';
 import { Location } from '@angular/common';
 
 // comando preserveWhitespaces para preservar os espaços em branco na view HTML
@@ -27,6 +26,13 @@ export class ReceitasListaComponent implements OnInit {
   // vai pegar o resultado e atribuir a variavel receitas
   ngOnInit() {
     this.service.list().subscribe(dados => this.receitas = dados);
+  }
+
+  keyDownFunction(event) {
+    if (event.keyCode === 13) {
+
+      this.router.navigate(['/busca']);
+    }
   }
 
 }

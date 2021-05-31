@@ -17,13 +17,16 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BsModalService, ModalModule } from 'ngx-bootstrap/modal';
 import { LoginComponent } from './login/login.component';
 import { ReceitaPreparoComponent } from './receita-preparo/receita-preparo.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ReceitasListaComponent,
     LoginComponent,
-    ReceitaPreparoComponent
+    ReceitaPreparoComponent,
+    SearchComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

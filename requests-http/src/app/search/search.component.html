@@ -1,0 +1,20 @@
+<div class="container search-table">
+    <div class="search-list">
+        <h3>{{ total }} Receitas encontradas</h3>
+        <table class="table" id="myTable">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- async para realizar o unsubscribe após o ngfor -->
+                <tr *ngFor="let result of results$ | async">
+                    <td>{{ result.nome }}</td>
+                    <td>{{ result.link }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

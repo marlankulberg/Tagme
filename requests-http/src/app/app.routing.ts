@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ReceitasListaComponent } from './receitas-lista/receitas-lista.component';
 import { LoginComponent } from './login/login.component';
 import { ReceitaPreparoComponent } from './receita-preparo/receita-preparo.component';
+import { SearchComponent } from './search/search.component';
 
 // Vai ser criado um objeto constante para declarar as rotas
 // esse objeto vai ser do tipo Routes e será um array. Dentro deste array que serão declaradas as rotas
@@ -15,6 +16,7 @@ const APP_ROUTES: Routes = [
     { path: 'receitas', component: ReceitasListaComponent },
     { path: 'receitas/:_id', component: ReceitaPreparoComponent },
     { path: 'login', component: LoginComponent },
+    { path: 'busca', component: SearchComponent },
     { path: '', redirectTo: '/login', pathMatch: 'full' },
 ];
 

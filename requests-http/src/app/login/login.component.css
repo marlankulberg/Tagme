@@ -16,6 +16,38 @@
     width: 10em
 }
 
+#usuario {
+    background: url('../../assets/images/icon-login.png');
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    background-color: white;
+    font-size: 12px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+}
+
+#senha {
+    background: url('../../assets/images/icon-key.png');
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    background-color: white;
+    font-size: 12px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+}
+
+#acesso {
+    margin-left: auto;
+    margin-right: auto;
+    width: 210px;
+}
+
+#logo_cocobambu {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
 
 /* Classe balão, pode ser implementada posteriormente, se houver aviso de novos pedidos */
 

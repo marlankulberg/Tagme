@@ -7,15 +7,14 @@ clear: both;  */
     /*  display: inline;*/
 }
 
-.busca {
-    margin-top: auto;
-    display: inline;
-    padding-right: 35px;
-    text-align: right;
-    width: 140px;
-    display: block;
-    float: left;
-    transform: translate(200px, 10px);
+#myInput {
+    background-image: url('../../assets/images/icon-busca.png');
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    transform: translate(200px, 5px);
 }
 
 .menu-opcoes ul li {
@@ -28,16 +27,23 @@ li a {
     color: white;
 }
 
+li a:hover {
+    background-color: white;
+    color: black;
+}
+
+li a:active {
+    background-color: white;
+    color: black;
+}
+
 .menu-opcoes {
     position: absolute;
     bottom: 0;
     right: 0;
-    /* padding-left: 100px;
-transform: translate(500px, 10px); */
 }
 
 #logo_pequeno {
-    /*  display: inline-block; */
     display: block;
     float: left;
 }
@@ -45,13 +51,6 @@ transform: translate(500px, 10px); */
 .float-r {
     float: right;
 }
-
-
-/*     .ver_receitas {
-    width: 50%;
-    height: 50px;
-    transform: translateY(20px);
-} */
 
 #figura-prato {
     text-align: center;

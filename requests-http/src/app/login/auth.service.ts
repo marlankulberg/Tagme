@@ -23,7 +23,7 @@ export class AuthService {
   // se informaçào for inválida, mantém a variavel como false
    // a função fazerlogin do componente irá chamar este método como serviço
   fazerLogin(usuario: Usuario) {
-    if (usuario.nome === '1' && usuario.senha === '1') {
+    if (usuario.nome === 'usuario@email.com' && usuario.senha === '654321') {
       this.usuarioAutenticado = true;
 
       // redireciona para rota receitas
